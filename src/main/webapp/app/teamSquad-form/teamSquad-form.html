@@ -1,0 +1,22 @@
+<section>
+    <form name="teamSquadForm" ng-submit="teamSquadForm.$valid && controller.addTeamSquad" novalidate>
+        <!--  Greeting Live Preview -->
+        <div ng-show="controller.newTeamSquad.name">
+            <h5>Preview your greentig</h5>
+            <blockquote>
+                {{controller.newTeamSquad.name}}
+            </blockquote>
+        </div>
+
+        <!--  Greeting Form -->
+        <fieldset class="form-group">
+            <textarea ng-model="controller.newTeamSquad.name" class="form-control" placeholder="Write your teamSquad..." title="TeamSquad" required></textarea>
+        </fieldset>
+        <fieldset class="form-group">
+            <input type="name" ng-model="controller.newTeamSquad.name" class="form-control" placeholder="And your Team Squad name..." title="Author" required/>
+        </fieldset>
+        <fieldset class="form-group">
+            <input type="submit" class="btn btn-primary pull-right" value="Submit TeamSquad"/>
+        </fieldset>
+    </form>
+</section>
